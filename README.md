@@ -20,7 +20,7 @@ Data ingestion is the process of collecting, importing, and processing data from
 ``Write a python script to fetch the documents stored in blob storage and lets first extract the data using Document Intelligence.``
  
 **Document Intelligence**
-``Microsoft has Document Intelligence earlier[Form Recoginizer] and it has various Document analysis Models[OCR Models], prebuilt models and custom model available for users.``
+``Azure Document Intelligence Service - Microsoft has Document Intelligence earlier[Form Recoginizer] and it has various Document analysis Models[OCR Models], prebuilt models and custom model available for users.``
 
 - **Document Analysis Models**
 ``There were three models available earlier but now microsoft has finalized two models for now ``**``Read Moded``** and **``Layout Moded.``**
@@ -38,14 +38,14 @@ Both Models work on the phenomenon of Optical Character Recognition.For document
 ``
 
 **Embeddings**
-Vector embeddings in Azure Index refer to the representation of data objects (such as text, images, or other multimedia content) as vectors in a continuous vector space. Azure Cognitive Search, a service provided by Microsoft Azure, incorporates vector embeddings to enhance search capabilities, particularly in scenarios involving natural language processing (NLP) and semantic search. 
+Azure Machine Learning Service - Vector embeddings in Azure Index refer to the representation of data objects (such as text, images, or other multimedia content) as vectors in a continuous vector space. Azure Cognitive Search, a service provided by Microsoft Azure, incorporates vector embeddings to enhance search capabilities, particularly in scenarios involving natural language processing (NLP) and semantic search. 
 
 ``To create embeddings you can use openAI models like if text embeddings is the use case then`` **``text-embeddings-ada-002``**
 
 
 - **Indexing**
 
-Since you have obtained the Chunks with embeded vectors, its time to define a index schema and push your all chunks into blob storage and connect it with index.``
+Azure AI Search Service - Since you have obtained the Chunks with embeded vectors, its time to define a index schema and push your all chunks into blob storage and connect it with index.``
 Now here comes the Indexer that we can use to connect the json chunks to index.Run an indexer by following all the steps and you will ended up getting a index where all your chunks are uploaded. Now to verify here, you can ask queries directly to the indexes and observe the response.
 
 If response are as per expectataion, like indexer is referring to the chunks that contain the data regards to your query you can Go ahead
