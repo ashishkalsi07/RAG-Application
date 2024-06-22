@@ -15,7 +15,7 @@ This Repo  contains all the steps you need to know while working on a RAG applic
 ``Get the connection string and write a python script which help in data ingestion.``
 
 **Data Ingestion**
-``Data ingestion is the process of collecting, importing, and processing data from various sources into a storage or processing system where it can be accessed, analyzed, and utilized effectively. In the context of a Retrieval-Augmented Generation (RAG) architecture using Microsoft Azure, data ingestion involves several steps to ensure that raw data from documents is prepared for further processing, analysis, and querying``.
+Data ingestion is the process of collecting, importing, and processing data from various sources into a storage or processing system where it can be accessed, analyzed, and utilized effectively. In the context of a Retrieval-Augmented Generation (RAG) architecture using Microsoft Azure, data ingestion involves several steps to ensure that raw data from documents is prepared for further processing, analysis, and querying.
 
 ``Write a python script to fetch the documents stored in blob storage and lets first extract the data using Document Intelligence.``
  
@@ -24,7 +24,7 @@ This Repo  contains all the steps you need to know while working on a RAG applic
 
 - **Document Analysis Models**
 ``There were three models available earlier but now microsoft has finalized two models for now ``**``Read Moded``** and **``Layout Moded.``**
-``Both Models work on the phenomenon of Optical Character Recognition.For documents like PDF,Docx you can choose layout model and starting extracting out your data. Ideally you will get a JSON object in response from the layout model (depends on the api_version you are using)``
+Both Models work on the phenomenon of Optical Character Recognition.For documents like PDF,Docx you can choose layout model and starting extracting out your data. Ideally you will get a JSON object in response from the layout model (depends on the api_version you are using)
 
 ``If your JSON file is too large it is recomended to Chunked the JSON file using any of the Chunking strategies, with any framework. Now getting small chunks will increase the quality of data index while querying the Azure indexes.``
 
@@ -45,10 +45,10 @@ Vector embeddings in Azure Index refer to the representation of data objects (su
 
 - **Indexing**
 
-``Since you have obtained the Chunks with embeded vectors, its time to define a index schema and push your all chunks into blob storage and connect it with index.``
-``Now here comes the Indexer that we can use to connect the json chunks to index.Run an indexer by following all the steps and you will ended up getting a index where all your chunks are uploaded. Now to verify here, you can ask queries directly to the indexes and observe the response.``
+Since you have obtained the Chunks with embeded vectors, its time to define a index schema and push your all chunks into blob storage and connect it with index.``
+Now here comes the Indexer that we can use to connect the json chunks to index.Run an indexer by following all the steps and you will ended up getting a index where all your chunks are uploaded. Now to verify here, you can ask queries directly to the indexes and observe the response.
 
-``If response are as per expectataion, like indexer is referring to the chunks that contain the data regards to your query you can Go ahead``
+If response are as per expectataion, like indexer is referring to the chunks that contain the data regards to your query you can Go ahead
 
 - **Chains**
 
